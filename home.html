@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="icon" href="icon1.png" type="image/icon type">
+</head>
+<body>
+    <div class="header" id="header">
+        <ul>
+            <li>
+                <a href="#"><img src="static/icons/logo.png" style="width:100px; height:35px; margin-top: 15px;"></a>
+            </li>
+            <li>
+                <a href="#" class="nav-item1">
+                    <i class="material-icons" style="font-size:15px;">location_on</i>
+                    <div class="nav-item">
+                        <small>Hello !</small>
+                        <span>Select your location</span>
+                    </div> 
+                </a>
+            </li>
+            <li class="search">
+                <select id="resizing_select">
+                    <option>All Categories</option>
+                    <option>option1</option>
+                    <option>option2</option>
+                    <option>option3</option>
+                    <option>option4</option>
+                    <option>option5</option>
+                </select>
+                <select id="width_tmp_select">
+                    <option id="width_tmp_option"></option>
+                </select>
+                <input type="text">
+                <button><img src="static/icons/search.png" width="25px"></button>
+            </li>
+            <li class="language">
+                <select name="" id="">
+                    <option value="">English</option>
+                    <option value="">Hindi</option>
+                </select>
+            </li>
+            <li>
+                <a href="#" class="nav-item">
+                   <small> Hello, Sign in</small>                    
+                   <span>Account & lists</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-item">
+                    <small>Returns</small>
+                    <span>& Orders</span>
+                </a>
+            </li>
+            <li class="cart">
+                <a href="#">
+                    <img src="static/icons/cart.png" class="img" width="30px" height="30px">
+                    <span style="margin-top:10px;">Cart</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="header-2">
+        <ul>
+            <li><a href="#" class="menu"><i class="material-icons" style="font-size:20px;">menu</i>All</a></li>
+            <li><a href="#">Best Sellers</a></li>
+            <li><a href="#">Mobiles</a></li>
+            <li><a href="#">Electronics</a></li>
+            <li><a href="#">Fashion</a></li>
+            <li><a href="#">New Releases</a></li>
+            <li><a href="#">Customer Service</a></li>
+            <li><a href="#">Amazon Pay</a></li>
+            <li><a href="#">Computers</a></li>
+            <li><a href="#">Home & Kitchen</a></li>
+            <li><a href="#">Today's Deals</a></li>
+            <li><a href="#">Toys's & Games</a></li>
+            <li><a href="#">Books</a></li>
+            <li><a href="#">Sell</a></li>
+            <li><a href="#">Coupons</a></li>
+        </ul>
+    </div>
+    <div class="media">
+        <div class="slideshow_container" id="slideshow_container">
+            <div class="mySlides_fade">
+                <img src="static/slides/slide1.jpg">
+            </div>
+            <div class="mySlides_fade">
+                <img src="static/slides/slide2.jpg">
+            </div>
+            <div class="mySlides_fade">
+                <img src="static/slides/slide3.jpg">
+            </div>
+            <div class="mySlides_fade">
+                <img src="static/slides/slide4.jpg">
+            </div>
+            <div class="mySlides_fade">
+                <img src="static/slides/slide5.jpg">
+            </div>
+            <div class="mySlides_fade">
+                <img src="static/slides/slide6.jpg">
+            </div>
+            <div class="mySlides_fade">
+                <img src="static/slides/slide7.jpg">
+            </div>
+            <div class="mySlides_fade">
+                <img src="static/slides/slide7.jpg">
+            </div>
+            <div class="navi">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+    </div>
+    <div class="data">
+        <div class="menu1">
+            <div class="box">
+                <h3>Top picks for your home</h3> <br>
+                <div class="links">
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/AC.jpg" alt="">
+                        <small>Ac's</small>
+                    </a>
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/refriginator.jpg" alt="">
+                        <small>Refriginator</small>
+                    </a>
+                </div><br>
+                <div class="links">
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/microwave.jpg" alt="">
+                        <small>Microwaves</small>
+                    </a>
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/WS.jpg" alt="">
+                        <small>Washing machines</small>
+                    </a>
+                </div> <br>
+                <a href="#">See more</a>
+            </div>
+            <div class="box">
+                <h3>Up to 70% off | Electronics clearance store</h3> <br>
+                <div class="links">
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/TV.jpg" id="lg-box-icons">
+                    </a>
+                </div> <br>
+                <a href="#">See more</a>
+            </div>
+            <div class="box">
+                <h3>Styles for Men | Up to 70% off</h3> <br>
+                <div class="links">
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/clothing.jpg" alt="">
+                        <small>Clothing</small>
+                    </a>
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/footwere.jpg" alt="">
+                        <small>Footwere</small>
+                    </a>
+                </div><br>
+                <div class="links">
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/watches.jpg" alt="">
+                        <small>Watches</small>
+                    </a>
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/Bags & luggage.jpg" alt="">
+                        <small>Bags & luggage</small>
+                    </a>
+                </div> <br>
+                <a href="#">View all offers</a>
+            </div>
+            <div class="box">
+                <h3>Styles for Women | Up to 70% off</h3> <br>
+                <div class="links">
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/women-clothing.jpg" alt="">
+                        <small>Women's Clothing</small>
+                    </a>
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/women-handbags.jpg" alt="">
+                        <small>Footwere + Handbags</small>
+                    </a>
+                </div><br>
+                <div class="links">
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/women-watches.jpg" alt="">
+                        <small>Watches</small>
+                    </a>
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/jewellery.jpg" alt="">
+                        <small>Fashion jewellery</small>
+                    </a>
+                </div> <br>
+                <a href="#">View all offers</a>
+            </div>
+        </div>
+        <div class="menu1">
+            <div class="box">
+                <h3 style="margin-bottom: 20px;">Oxygen concentrators</h3> 
+                <div class="links">
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/oxygen-generator.jpg" id="lg-box-icons-1">
+                    </a>
+                </div> <br>
+                <a href="#">See more</a>
+            </div>
+            <div class="box">
+                <h3>Shop by Category</h3> <br>
+                <div class="links">
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/fresh.jpg" alt="">
+                        <small>Fresh</small>
+                    </a>
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/mobiles.jpg" alt="">
+                        <small>Mobiles</small>
+                    </a>
+                </div><br>
+                <div class="links">
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/fashion.jpg" alt="">
+                        <small>Fashion</small>
+                    </a>
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/electronics.jpg" alt="">
+                        <small>Electronics</small>
+                    </a>
+                </div> <br>
+                <a href="#">See more</a>
+            </div>
+            <div class="box">
+                <h3>Everyday essentials</h3> <br>
+                <div class="links">
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/cleaning.jpg" alt="">
+                        <small>Cleaning essentials</small>
+                    </a>
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/healthcare.jpg" alt="">
+                        <small>Immunity & healthcare</small>
+                    </a>
+                </div><br>
+                <div class="links">
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/women-personal-care.jpg" alt="">
+                        <small>Womens's personal care</small>
+                    </a>
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/men-grooming.jpg" alt="">
+                        <small>Men's grooming</small>
+                    </a>
+                </div> <br>
+                <a href="#">See more</a>
+            </div>
+            <div class="box">
+                <h3>Upgrade to bestselling smart TVs</h3>
+                <div class="links">
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/bederoom-tv.jpg" alt="">
+                        <small>Bedroom TVs | 32 inch</small>
+                    </a>
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/smart-tv.jpg" alt="">
+                        <small>Redmi Smart TVs: Starting ₹33,999</small>
+                    </a>
+                </div><br>
+                <div class="links">
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/premium-tv.jpg" alt="">
+                        <small>Premium TVs</small>
+                    </a>
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/all television.jpg" alt="">
+                        <small>All televisions</small>
+                    </a>
+                </div> <br>
+                <a href="#">See more</a>
+            </div>
+        </div> 
+        <div class="menu2">
+            <h3>Today's Deals</h3><br>
+            <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": false, "imagesLoaded":true }'>
+                <div class="carousel-cell">
+                    <a class="cell-data">
+                        <img src="static/slide-icons/phn1.jpg" alt="">
+                        <small><b>₹19,990.00-₹22,990.00</b></small>
+                        <small>End's in 15:31:20</small>
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide-icons/phn2.jpg" alt="">
+                        <h5>₹16,999.00</h5>
+                        <small style="text-decoration: line-through;">₹16,999.00</small>
+                        <small>End's in 15:23:51</small>
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide-icons/phn3.jpg" alt="">
+                        <h5>₹21,999.00</h5>
+                        <small style="text-decoration: line-through;">₹24,999.00</small>
+                        <small>End's in 5:12:19</small>
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide-icons/headphone.jpg" alt="">
+                        <small><b>₹349.00-₹9,990.00</b></small>
+                        <small>End's in 02:01:10</small>
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide-icons/laptop.jpg" alt="">
+                        <small><b>₹9,990.00-₹67,990.00</b></small>
+                        <small>End's in 5:41:29</small>
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide-icons/protine.jpg" alt="">
+                        <small><b>₹109.00-₹10,999.00</b></small>
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide-icons/matress.jpg" alt="">
+                        <small><b>₹3,089.00-₹26,549.00</b></small>
+                        <small>End's in 15:39:20</small>
+                    </a>
+                </div>
+                <div class="carousel-cell">
+                    <div class="cell-data">
+                        <img src="static/slide-icons/earpods.jpg" alt="">
+                        <small><b>₹99.00-₹15,999.00</b></small>
+                        <small>End's in 2 hours</small>
+                    </div>
+                    <div class="cell-data">
+                        <img src="static/slide-icons/watch.jpg" alt="">
+                        <small><b>₹199.00-₹836.00</b></small>
+                        <small>End's in 14:54:21</small>
+                    </div>
+                    <div class="cell-data">
+                        <img src="static/slide-icons/antivirus.jpg" alt="">
+                        <small><b>₹89.00-₹2,799.00</b></small>
+                        <small>End's in 15:23:10</small>
+                    </div>
+                    <div class="cell-data">
+                        <img src="static/slide-icons/aquagaurd.jpg" alt="">
+                        <small><b>₹1,499.00-₹3,864.00</b></small>
+                        <small>End's in 15:24:51</small>
+                    </div>
+                    <div class="cell-data">
+                        <img src="static/slide-icons/camera.jpg" alt="">
+                        <h5>₹5,699.00</h5>
+                        <small style="text-decoration: line-through;">₹7,099.00</small>
+                        <small>End's in 5:12:19</small>
+                    </div>
+                    <div class="cell-data">
+                        <img src="static/slide-icons/t-shirt.jpg" alt="">
+                        <small><b>₹319.00-₹779.00</b></small>
+                    </div>
+                    <div class="cell-data">
+                        <img src="static/slide-icons/trousers.jpg" alt="">
+                        <small><b>₹162.00-₹1,104.00</b></small>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div class="menu2" id="menu2">
+            <h3>Essential for your health | Multivitamins & nutritional supplements</h3><br>
+            <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": false, "imagesLoaded":true }'>
+                <div class="carousel-cell">
+                    <a class="cell-data">
+                        <img src="static/slide2-icons/weight-gainer.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide2-icons/mass-gainer.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide2-icons/fish-oil.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide2-icons/weight-gainer2.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide2-icons/multivitamin.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide2-icons/vegan-protein.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide2-icons/supplements.jpg" alt="">
+                    </a>
+                </div>
+                <div class="carousel-cell">
+                    <a class="cell-data">
+                        <img src="static/slide2-icons/sanitizer.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide2-icons/bcaa.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide2-icons/wheat grass.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide2-icons/spirulina.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide2-icons/calcium.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide2-icons/high-protien.jpg" alt="" width="140px" height="200px">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide2-icons/carbs.jpg" alt="" width="140px" height="200px">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="menu1">
+            <div class="box">
+                <h3>Experience hands-free entertainment</h3>
+                <div class="links">
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/echo-dot.jpg" alt="">
+                        <small>Echo Dot | Listen to your favourite music & more</small>
+                    </a>
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/fire-stick.jpg" alt="">
+                        <small>Fire TV Stick | Stream on your TV</small>
+                    </a>
+                </div><br>
+                <div class="links">
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/echo-smart.jpg" alt="">
+                        <small>Echo smart display | Hand's free video calling</small>
+                    </a>
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/new-echo.jpg" alt="">
+                        <small>All-new Echo | Powred by Dolby</small>
+                    </a>
+                </div> <br>
+                <a href="#">See more</a>
+            </div>
+            <div class="box">
+                <h3 style="margin-bottom: 30px;">Give your home classroom a makeover</h3>
+                <div class="links">
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/cabinet.jpg" alt="">
+                        <small>Cabinets & Bookshelves</small>
+                    </a>
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/wardrobes.jpg" alt="">
+                        <small>Wardrobes</small>
+                    </a>
+                </div><br>
+                <div class="links">
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/study-lamp.jpg" alt="">
+                        <small>Study lamps</small>
+                    </a>
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/study-table.jpg" alt="">
+                        <small>Study tables & chairs</small>
+                    </a>
+                </div> <br>
+                <a href="#">See more</a>
+            </div>
+            <div class="box">
+                <h3>Up to 30% | Grocery needs | Amazon fresh</h3>
+                <div class="links">
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/cooking.jpg" alt="">
+                        <small>Up to 30% off | Cooking essentials</small>
+                    </a>
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/beauty.jpg" alt="">
+                        <small>Up to 30% off | Beauty essentials</small>
+                    </a>
+                </div><br>
+                <div class="links">
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/bread-eggs.jpg" alt="">
+                        <small>Up to 10% off | Daily, bread & eggs</small>
+                    </a>
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/packaged-food.jpg" alt="">
+                        <small>Up to 25% off | Packaged food</small>
+                    </a>
+                </div> <br>
+                <a href="#">Visit the store</a>
+            </div>
+            <div class="box">
+                <h3>Upgrade to bestselling smart TVs</h3>
+                <div class="links">
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/gifts.jpg" id="lg-box-icons-1">
+                    </a>
+                </div> <br>
+                <a href="#">See more</a>
+            </div>
+        </div> 
+        <div class="menu2" id="menu2">
+            <h3>Best Sellers in Home & Kitchen</h3><br>
+            <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": false, "imagesLoaded":true }'>
+                <div class="carousel-cell">
+                    <a class="cell-data">
+                        <img src="static/slide3-icons/weight-machine.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide3-icons/matress.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide3-icons/pillow.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide3-icons/kettel.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide3-icons/hand-mixer.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide3-icons/odonil.jpg" alt="">
+                    </a>
+                </div>
+                <div class="carousel-cell">
+                    <a class="cell-data">
+                        <img src="static/slide3-icons/clothes-stand.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide3-icons/dish-washer.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide3-icons/hand-blender.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide3-icons/clips.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide3-icons/wiper.jpg" alt="" width="170px" height="200px">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide3-icons/broom.jpg" alt="" width="170px" height="200px">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide3-icons/dustbin.jpg" alt="" width="170px" height="200px">
+                    </a>
+                </div>  
+            </div>
+        </div>
+        <div class="menu2" id="menu2">
+            <h3>Essentials for your safety</h3>
+            <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": false, "imagesLoaded":true }'>
+                <div class="carousel-cell">
+                    <a class="cell-data">
+                        <a href="#"><img src="static/slide4-icons/n-95.jpg" alt=""></a>
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide4-icons/cloth-mask.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide4-icons/sterilization-lamp.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide4-icons/oxymeter.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide4-icons/cotton-mask.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide4-icons/surgical-mask.jpg" alt="">
+                    </a>
+                </div>
+                <div class="carousel-cell">
+                    <a class="cell-data">
+                        <img src="static/slide4-icons/cotton-mask2.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide4-icons/face-sheild.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide4-icons/sanitarizer.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide4-icons/cotton-mask3.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide4-icons/mask.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide4-icons/printed-mask.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide4-icons/ppe-kit.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu3" style="margin-top: 15px; margin-bottom:15px;">
+            <a href="#"><img src="static/banner1.jpg" alt=""></a>
+        </div>
+
+        <div class="menu1">
+            <div class="box">
+                <h3>Pick from these types of masks</h3> <br>
+                <div class="links">
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/N95-mask.jpg" alt="">
+                        <small>N95 Masks & respirators</small>
+                    </a>
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/cloth-mask.jpg" alt="">
+                        <small>Cloth masks</small>
+                    </a>
+                </div><br>
+                <div class="links">
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/kid-mask.jpg" alt="">
+                        <small>Kids mask</small>
+                    </a>
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/mask-store.jpg" alt="">
+                        <small>View the mask store</small>
+                    </a>
+                </div> <br>
+                <a href="#">View all</a>
+            </div>
+            <div class="box">
+                <h3>School From Home | Online classes made easy</h3>
+                <div class="links">
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/laptop-projectors.jpg" alt="">
+                        <small>Laptops & Projectors</small>
+                    </a>
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/speakers.jpg" alt="">
+                        <small>Headsets & Speakers</small>
+                    </a>
+                </div><br>
+                <div class="links">
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/mobile.jpg" alt="">
+                        <small>Mobiles & Accessories</small>
+                    </a>
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/printer.jpg" alt="">
+                        <small>Printer & ink</small>
+                    </a>
+                </div> <br>
+                <a href="#">See more</a>
+            </div>
+            <div class="box">
+                <h3>Shop for your baby by age</h3> <br>
+                <div class="links">
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/baby-6.jpg" alt="">
+                        <small>0-6 months</small>
+                    </a>
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/baby-12.jpg" alt="">
+                        <small>6-12 months</small>
+                    </a>
+                </div><br>
+                <div class="links">
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/baby-18.jpg" alt="">
+                        <small>12-18 months</small>
+                    </a>
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/baby-24.jpg" alt="">
+                        <small>18-24 months</small>
+                    </a>
+                </div> <br>
+                <a href="#">See more</a>
+            </div>
+            <div class="box">
+                <h3>All your academic needs at one place</h3>
+                <div class="links">
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/school-books.jpg" alt="">
+                        <small>School books & guides</small>
+                    </a>
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/exam-books.jpg" alt="">
+                        <small>Exam preparation books</small>
+                    </a>
+                </div><br>
+                <div class="links">
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/college-books.jpg" alt="">
+                        <small>College textbooks & references</small>
+                    </a>
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/e-books.jpg" alt="">
+                        <small>E-learning</small>
+                    </a>
+                </div> <br>
+                <a href="#">See all books</a>
+            </div>
+        </div>
+
+        <div class="menu2" id="menu2">
+            <h3>Essential food products | Amazon Launchpad</h3> <br>
+            <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": false, "imagesLoaded":true }'>
+                <div class="carousel-cell">
+                    <a class="cell-data">
+                        <img src="static/slide5-icons/dryfruits.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide5-icons/dryfruits-1.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide5-icons/ghee.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide5-icons/dates.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide5-icons/dryfruits2.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide5-icons/dryfruits3.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide5-icons/ghee2.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide5-icons/coconut-oil.jpg" alt="">
+                    </a>
+                </div>
+                <div class="carousel-cell">
+                    <a class="cell-data">
+                        <img src="static/slide5-icons/dates2.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide5-icons/seed-mix.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide5-icons/oats.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide5-icons/gulkand.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide5-icons/peanut-butter.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide5-icons/dryfruits4.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide5-icons/smoodies.jpg" alt="">
+                    </a>
+                </div>
+                <div class="carousel-cell">
+                    <a class="cell-data">
+                        <img src="static/slide5-icons/peanut-butter2.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide5-icons/gulkand2.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide5-icons/grp-dry-fruits.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide5-icons/almond-butter.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide5-icons/jawar-puffs.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide5-icons/dip-sters.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide5-icons/cashew.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="menu2" id="menu2">
+            <h3>More everyday essentials to explore</h3> <br>
+            <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": false, "imagesLoaded":true }'>
+                <div class="carousel-cell">
+                    <a class="cell-data">
+                        <img src="static/slide6-icons/milk-powder1.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide6-icons/aata.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide6-icons/ghee.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide6-icons/mustard-oil.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide6-icons/colgate.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide6-icons/mr-white.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide6-icons/tata-tea.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide6-icons/milk-powder.jpg" alt="">
+                    </a>
+                </div>
+                <div class="carousel-cell">
+                    <a class="cell-data">
+                        <img src="static/slide6-icons/vim-bar.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide6-icons/tea-gold.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide6-icons/saffola.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide6-icons/walnut.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide6-icons/maggi-mega-pack.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide6-icons/oreo.jpg" alt="">
+                    </a>
+                    <a class="cell-data">
+                        <img src="static/slide6-icons/peanut-butter.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu1">
+            <div class="box">
+                <h3>Up to 60% off | School from home essentials</h3>
+                <div class="links">
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/home-essentials.jpg" id="lg-box-icons-1">
+                    </a>
+                </div><br>
+                <a href="#">View all</a>
+            </div>
+            <div class="box">
+                <h3>Books in Indian languages</h3> <br>
+                <div class="links">
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/book-indian.jpg" id="lg-box-icons-1">
+                    </a>
+                </div><br>
+                <a href="#">View all</a>
+            </div>
+            <div class="box">
+                <h3>Everything you need for Father's Day gifting</h3>
+                <div class="links">
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/father-gift.jpg" id="lg-box-icons-1">
+                    </a>
+                </div><br>
+                <a href="#">View all</a>
+            </div>
+            <div class="box">
+                <h3>Cookware & dining</h3> <br>
+                <div class="links">
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/gas-stove.jpg" alt="">
+                        <small>Gas stoves</small>
+                    </a>
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/cookware.jpg" alt="">
+                        <small>Cookware</small>
+                    </a>
+                </div><br>
+                <div class="links">
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/kitchen-storage.jpg" alt="">
+                        <small>Kitchen storage</small>
+                    </a>
+                    <a href="#" class="sub-menu">
+                        <img src="static/box-icons/tableware.jpg" alt="">
+                        <small>Tableware</small>
+                    </a>
+                </div> <br>
+                <a href="#">See more</a>
+            </div>
+        </div>
+
+        <div class="menu4">
+            <img src="static/banner2.jpg" alt="">
+        </div>
+
+    </div> <!--end of data-->
+
+    <div class="footer">
+        <a href="#header">Back to top</a>
+    </div>
+    <div class="footer2">
+       <div class="foot-data">
+        <ul>
+            <li class="heading">Get to know us</li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press Releases</a></li>
+            <li><a href="#">Amazon Cares</a></li>
+            <li><a href="#">Gift a Smile</a></li>
+        </ul>
+        <ul>
+            <li class="heading">Connect with us</li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+        <ul>
+            <li class="heading">Make Money with Us</li>
+            <li><a href="#">Sell on Amazon</a></li>
+            <li><a href="#">Sell under Amazon Accelerator</a></li>
+            <li><a href="#">Amazon Global Selling</a></li>
+            <li><a href="#">Become an Affiliate</a></li>
+            <li><a href="#">Fulfilment by Amazon</a></li>
+            <li><a href="#">Advertise Your Products</a></li>
+            <li><a href="#">Amazon Pay on Merchants</a></li>
+        </ul>
+        <ul>
+            <li class="heading">Let Us Help You</li>
+            <li><a href="#">COVID-19 and Amazon</li>
+            <li><a href="#">Your Account</a></li>
+            <li><a href="#">Return Centre</a></li>
+            <li><a href="#">100% Purchase Protection</a></li>
+            <li><a href="#">Amazon App Download</a></li>
+            <li><a href="#">Amazon Assistant Download</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+       </div>
+    </div>
+    <div class="footer4">
+        <div class="foot-data1">
+            <ul>
+                <li><a href="#">Australia</a></li>
+                <li><a href="#">Brazil</a></li>
+                <li><a href="#">Canada</a></li>
+                <li><a href="#">France</a></li>
+                <li><a href="#">Germany</a></li>
+                <li><a href="#">Italy</a></li>
+                <li><a href="#">Japan</a></li>
+                <li><a href="#">Mexico</a></li>
+                <li><a href="#">Netherlands</a></li>
+                <li><a href="#">Poland</a></li>
+                <li><a href="#">Singapore</a></li>
+                <li><a href="#">Spain</a></li>
+                <li><a href="#">Turkey</a></li>
+                <li><a href="#">United Arab Emirates</a></li>
+                <li><a href="#">United Kingdom</a></li>
+                <li><a href="#">United States</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer5">
+        <div class="foot-root">
+            <div class="root">
+                <div>
+                    <a href="#" class="root-data">
+                        <small class="heading">AbeBooks</small>
+                        <small>Books, art</small>
+                        <small>& collectibles</small>
+                    </a> <br>
+                    <a href="#" class="root-data">
+                        <small class="heading">Shopbop</small>
+                        <small>Designer</small>
+                        <small>Fashion Brands</small>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="root-data">
+                        <small class="heading">Amazon Web Services</small>
+                        <small>Scalable Cloud</small>
+                        <small>Computing Services</small>
+                    </a> <br>
+                    <a href="#" class="root-data">
+                        <small class="heading">Amazon Business</small>
+                        <small>Everything For </small>
+                        <small>Your Business</small>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="root-data">
+                        <small class="heading">Audible</small>
+                        <small>Download</small>
+                        <small>Audio Books</small>
+                    </a> <br>
+                    <a href="#" class="root-data">
+                        <small class="heading">Prime Now</small>
+                        <small>2-Hour Delivery</small>
+                        <small>on Everyday Items</small>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="root-data">
+                        <small class="heading">DPReview</small>
+                        <small>Digital</small>
+                        <small>Photography</small>
+                    </a> <br>
+                    <a href="#" class="root-data">
+                        <small class="heading">Amazon Prime Music</small>
+                        <small>70 million songs, ad-free</small>
+                        <small>Over 9 million podcast episodes</small>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="root-data">
+                        <small class="heading">IMDb</small>
+                        <small>Movies, TV</small>
+                        <small>& Celebrities</small>
+                    </a>
+                </div>
+            </div> <br>
+            <p><a href="#">Conditions of Use & Sale</a> <a href="#">Privacy Notice</a> <a href="#">Interest-Based Ads</a> © 1996-2021, Amazon.com, Inc. or its affiliates</p>
+        </div>
+    </div>
+</body>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+<script src="index.js"></script>
+</html>
